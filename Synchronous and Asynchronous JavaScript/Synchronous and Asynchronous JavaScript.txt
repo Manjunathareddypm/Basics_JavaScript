@@ -1,0 +1,12 @@
+Synchronous 
+
+Blocking method is execute Synchronous, that means it execute line by line.
+this maintains stack LIFO order that means Last In First Out, suppose if we have f1, f2, f3 functions first it will excecute f1 then f2 then f3 order.
+
+
+Asynchronous JavaScript
+
+Non-Blocking method is execute Asynchronous, The word asynchronous means not occurring at the same time
+Typically, executing things in sequence works well. 
+But you may sometimes need to fetch data from the server or execute a function with a delay, something you do not anticipate occurring NOW. 
+So, you want the code to execute asynchronously.
