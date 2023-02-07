@@ -1,0 +1,79 @@
+let :- variables declared with "let" keyword. it cannot be redeclared with same variable name in a same scope 
+but we can reassign the value of that variable. we can redeclare the same variable name in other Scope. but it sholud not be in same scope.
+
+Ex:- let a = 10
+     let a = 20                // There will be an error
+    console.log(a)
+
+Ex:-  let a = 10
+        a = 20
+        console.log(a)         // it works fine output will be 20
+
+Ex:-    let b = 10
+        function showNumber(){     
+            let b = 20              // it works fine because scope of Variable is different it is not in same scope. o/p will be 20
+            console.log(b);
+        }
+        showNumber()
+
+const :- variables declared with "const" keyword. it cannot be redeclared or reassign the value with same variable name in a same scope 
+we can redeclare the same variable name in other Scope. but it sholud not be in same scope.
+
+  Ex:-       const d = 10
+             const d = 20             // There will be an error because of Redeclaration
+             console.log(d)                 
+
+
+ Ex:-    const e = 10
+         e = 20                     // There will be an error saying that Assignment to constant variable.
+         console.log(e)
+
+
+
+ Ex:-   const f = 100
+        console.log(f)                //o/p will be 100
+
+
+ Ex:-   const g = 10
+        function showNumber(){     
+            const g = 20              // it works fine because scope of Variable is different it is not in same scope. o/p 20
+            console.log(g);
+        }
+        showNumber()
+
+
+var :- variables declared with "var" keyword. it can be redeclared or reassign the value with same variable name in a same scope or
+we can redeclare the same variable name in other Scope as well.
+
+
+Ex:-         var  x = 10
+             var  x = 20             //o/p is 20
+             console.log(x)                 
+
+
+ Ex:-    var e = 10
+         e = 20                     //o/p is 20
+         console.log(e)
+
+
+
+ Ex:-   var f = 100
+        console.log(f)                //o/p will be 100
+
+
+ Ex:-   var g = 10
+        function showNumber(){     
+            var g = 20              // o/p is 20
+            console.log(g);
+        }
+        showNumber()
+
+
+
+
+
+
+
+
+
+
