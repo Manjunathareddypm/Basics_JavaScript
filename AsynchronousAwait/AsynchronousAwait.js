@@ -3,83 +3,83 @@
 
 // Example1
 
-// var abc = () => {
-//     let a = 10
-//     let b = 20
-//     let sum = a + b
-//     return sum 
-// }
+var abc = () => {
+    let a = 10
+    let b = 20
+    let sum = a + b
+    return sum 
+}
 
-// function promiseFun() {
-//     return new Promise((reslove) => {
-//         setTimeout(() => {
-//             reslove(abc())
-//         }, 2000)
-//     })
-// }
+function promiseFun() {
+    return new Promise((reslove) => {
+        setTimeout(() => {
+            reslove(abc())
+        }, 2000)
+    })
+}
 
-// async function asyncCall() {
-//     let number = 6
-//     console.log("calling");
-//     const result =  await promiseFun();
-//     console.log("after resloving result " +result);
-//     const sum = result + number
-//     console.log("Final result " +sum);
+async function asyncCall() {
+    let number = 6
+    console.log("calling");
+    const result =  await promiseFun();
+    console.log("after resloving result " +result);
+    const sum = result + number
+    console.log("Final result " +sum);
 
     
-// }
+}
 
-// asyncCall()
+asyncCall()
 
 //Example 2
 
-// function resolveAfter2Seconds(x) {
-//     return new Promise((resolve) => {
-//       setTimeout(() => {
-//         resolve(x+"th Number");
-//       }, 2000);
-//     });
-//   }
+function resolveAfter2Seconds(x) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(x+"th Number");
+      }, 2000);
+    });
+  }
   
-//   async function f1() {
-//     const x = await resolveAfter2Seconds(10);
-//     console.log(x);                                                     // o/p 10
-//   }
+  async function f1() {
+    const x = await resolveAfter2Seconds(10);
+    console.log(x);                                                     // o/p 10
+  }
   
-//   f1();
+  f1();
 
   // Example 3
 
-//   function resolveAfter2Second() {
-//     return new Promise((resolve) => {
-//       setTimeout(() => {
-//         resolve([10, 20, 30]);
-//       }, 2000);
-//     });
-//   }
+  function resolveAfter2Second() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve([10, 20, 30]);
+      }, 2000);
+    });
+  }
   
-//   async function f2() {
-//     const x = await resolveAfter2Second();
-//     console.log(x);                                                     // o/p 10, 20, 30
-//   }
+  async function f2() {
+    const x = await resolveAfter2Second();
+    console.log(x);                                                     // o/p 10, 20, 30
+  }
   
-//   f2();
+  f2();
 
   // Example 4
 
-//   var arrayElement = (x) => {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             return resolve([10, 200, 300])
-//         }, 5000)
-//     }) 
-//   }
+  var arrayElement = (x) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            return resolve([10, 200, 300])
+        }, 5000)
+    }) 
+  }
 
-//   async function main() {
-//    const indexElement = await arrayElement(1)
-//    console.log(indexElement);
-//   } 
-//   main()
+  async function main() {
+   const indexElement = await arrayElement(1)
+   console.log(indexElement);
+  } 
+  main()
 
   //Example 5
 

@@ -1,0 +1,15 @@
+JavaScript has a runtime model based on an event loop
+which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. 
+This model is quite different from models in other languages like C and Java.
+
+Event loop works on stact, queue, node api
+
+firstly the statements will be excecuted in stack and ends
+
+At the time of excecution all the function will be collected by the node api
+
+later node api will pass the function to the queue
+
+then queue will check for stack is empty are not if it is empty
+
+then queue will pass the function to the stack then it will be excecuted.
