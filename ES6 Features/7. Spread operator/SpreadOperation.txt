@@ -1,0 +1,1 @@
+That is…, Array can be expanded, if it is an Object, it will be expanded according to key-value.

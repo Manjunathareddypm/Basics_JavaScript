@@ -1,0 +1,8 @@
+let: general variable, can be overridden
+
+const: Once declared, its contents cannot be modified. Because arrays and objects are indicators, their contents can be increased or decreased. but not to change its indicators
+
+In the early days, the var scope of js was global.
+
+That is, the variable is declared after you use it. When it is executed, it will be automatically mentioned to the top level, and it will be assigned later.
+more prone to contamination.

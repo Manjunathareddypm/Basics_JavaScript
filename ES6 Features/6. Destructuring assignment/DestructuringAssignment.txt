@@ -1,0 +1,1 @@
+Allow JavaScript to easily get content from arrays and objects.

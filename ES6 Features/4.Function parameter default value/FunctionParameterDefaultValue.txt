@@ -1,0 +1,1 @@
+If the function does not pass parameters, the default value is used. more condensed writing.

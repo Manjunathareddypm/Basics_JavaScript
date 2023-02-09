@@ -1,0 +1,3 @@
+The composition of long strings, in the past, was concatenated through +.
+
+Its readability is pretty bad. With template strings, it’s much easier to read.
