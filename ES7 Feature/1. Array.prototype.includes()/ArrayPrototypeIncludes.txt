@@ -1,0 +1,3 @@
+Used to determine whether the array contains the specified value, if so, return true; otherwise, return false.
+
+Like the previous usage of indexOf, it can be thought of as returning a boolean, which is more semantically clear.
