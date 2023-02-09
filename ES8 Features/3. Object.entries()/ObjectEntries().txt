@@ -1,0 +1,1 @@
+Returns the enumerable key, the value of the incoming object itself.

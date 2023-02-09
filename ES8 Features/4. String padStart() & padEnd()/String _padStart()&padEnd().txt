@@ -1,0 +1,10 @@
+You can add other content to the beginning or end of the string and fill it to the specified length.
+
+In the past, these functions are usually introduced with universal auxiliary kits (such as lodash) and had them together.
+
+Native syntax now provides direct:
+
+ String.padStart(fillingLength, FillingContent);
+
+//If the content to be filled is too much and exceeds the "filling length", 
+it will be filled from the far left to the upper limit of the length, and the excess part will be truncated
