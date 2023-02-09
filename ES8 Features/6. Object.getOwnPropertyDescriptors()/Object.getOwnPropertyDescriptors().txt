@@ -1,0 +1,1 @@
+Get your own Descriptor. General development business requirements are usually not used.

@@ -1,0 +1,1 @@
+Returns all the values of the Object’s own properties, excluding inherited values.
