@@ -1,0 +1,3 @@
+() => {…}, short for function. 
+Most importantly, he can ensure that this always points to himself
+No more writing var self = this, var that = this, etc!

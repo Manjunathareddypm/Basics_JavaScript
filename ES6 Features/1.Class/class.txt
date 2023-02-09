@@ -1,0 +1,3 @@
+JavaScript is a language that uses the prototype chain
+In the early days, concepts similar to OO were made through the prototype chain. The writing is quite complicated. 
+so CLASS finally launched in ES6

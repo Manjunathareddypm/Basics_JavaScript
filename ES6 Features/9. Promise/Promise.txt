@@ -1,0 +1,7 @@
+The promise is a solution to asynchronous (non-synchronous) writing, which is more elegant than the original callback writing.
+
+In the early days, it was a suite of the open-source community, and later it was incorporated into the language standard.
+
+And ES8 (ES2017) releases a more perfect async, await, which directly makes asynchronous writing like synchronization.
+
+The disadvantage is that when thoughts fall on complex business logic, await is sometimes missed, and errors are found at runtime.
