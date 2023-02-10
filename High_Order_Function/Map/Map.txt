@@ -1,0 +1,4 @@
+The map() method creates a new array by calling the callback function provided as an argument on every element in the input array. 
+The map() method will take every returned value from the callback function and creates a new array using those values.
+
+The callback function passed to the map() method accepts 3 arguments: element, index, and array.
