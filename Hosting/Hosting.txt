@@ -1,0 +1,57 @@
+Many JavaScript programmers explain hoisting as JavaScript’s behavior of moving declarations (variable and function) to the top of their current scope (function or global). 
+As if they were physically moved to the top of your code, which is not the case. 
+
+1.So What is Hoisting Then?
+During compile phase, just microseconds before your code is executed, 
+it is scanned for function and variable declarations. 
+All these functions and variable declarations are added to the memory inside a JavaScript data structure called Lexical Environment. 
+So that they can be used even before they are actually declared in the source code.
+
+2. Hoisting Function Expressions
+
+Only function declarations are hoisted in JavaScript, function expressions are not hoisted.
+
+3.Hoisting var variables:
+
+Let’s look at some examples to understand hoisting in case of var variables.
+
+console.log(a); // outputs 'undefined'
+var a = 3;
+We expected 3 but instead got undefined. Why?
+
+Remember JavaScript only hoist declarations, not initializations. That is, during compile time, JavaScript only stores function and variable declarations in the memory, not their assignments (value).
+
+But why undefined?
+
+When JavaScript engine finds a var variable declaration during the compile phase, it will add that variable to the lexical environment and initialize it with undefined and later during the execution when it reaches the line where the actual assignment is done in the code, it will assign that value to the variable.
+
+So the initial lexical environment for the above code will look something like this:
+
+lexicalEnvironment = {
+  a: undefined
+}
+That’s why we got undefined instead of 3. And when the engine reaches the line (during execution) where the actual assignment is done, it will update the value of the variable in its lexical environment. So the lexical environment after the assignment will look like this:
+
+lexicalEnvironment = {
+  a: 3
+}
+Hoisting let and const variables:
+Let’s first take a look at some examples:
+
+console.log(a);
+let a = 3;
+
+4. let and const hoist
+
+The answer is a bit more complicated than that. All declarations (function, var, let, const and class) are hoisted in JavaScript, while the var declarations are initialized with undefined, but let and const declarations remain uninitialized.
+
+They will only get initialized when their lexical binding (assignment) is evaluated during runtime by the JavaScript engine. 
+This means you can’t access the variable before the engine evaluates its value at the place it was declared in the source code. 
+This is what we call “Temporal Dead Zone”, A time span between variable creation and its initialization where they can’t be accessed.
+
+If the JavaScript engine still can’t find the value of let or const variables at the line where they were declared, it will assign them the value of undefined or return an error (in case of const).
+
+
+5.Hoisting Class Declaration
+Just as let and const declarations, classes in JavaScript are also hoisted, and just as let or const declarations, they remain uninitialized until evaluation. 
+So they are also affected by the “Temporal Dead Zone”. For example:
