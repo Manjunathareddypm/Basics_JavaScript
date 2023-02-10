@@ -1,0 +1,7 @@
+The reduce method executes the callback function on each member of the calling array which results in a single output value. The reduce method accepts two parameters: 1) The reducer function (callback), 2) and an optional initialValue.
+
+The reducer function (callback) accepts four parameters: accumulator, currentValue, currentIndex, sourceArray.
+
+If an initialValue is provided, then the accumulator will be equal to the initialValue and the currentValue will be equal to the first element in the array.
+
+If no initialValue is provided, then the accumulator will be equal to the first element in the array and the currentValue will be equal to the second element in the array.
